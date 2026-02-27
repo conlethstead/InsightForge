@@ -24,6 +24,10 @@ steps:
       - --platform
       - managed
       - --allow-unauthenticated
+      - --update-labels
+      - environment=${_ENVIRONMENT}
+      - --set-env-vars
+      - ENVIRONMENT=${_ENVIRONMENT}
       - --set-secrets
       - PAID_OPENAI_API_KEY=PAID_OPENAI_API_KEY:latest
 
@@ -32,3 +36,4 @@ substitutions:
   _SERVICE_NAME: business-intelligence
   _AR_REPO: business-intelligence
   _IMAGE_NAME: insightforge
+  _ENVIRONMENT: prod
