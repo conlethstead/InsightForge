@@ -1,0 +1,4 @@
+record_id,event_date,region,product,channel,revenue,units,discount,tax,profit,cost,customer_age,customer_gender,satisfaction,segment,country,city,store_id,sales_rep,promo_code,returns,is_new_customer,device_type,session_minutes,page_views,ad_spend,conversion_rate,nps_score,ticket_count,resolution_hours,inventory_level,reorder_point,supplier_lead_days,warehouse,temp_celsius
+1,2026-03-01,North,Widget A,online,1500.25,12,0.10,120.5,420.0,1080.25,33,F,4.5,SMB,IE,Dublin,S001,R101,PROMO10,0,1,mobile,14.2,8,230.0,0.042,52,1,2.5,120,60,7,WH-A,18.4
+2,2026-03-02,South,Widget B,retail,980.00,7,0.00,78.4,210.0,770.0,46,M,3.8,Enterprise,US,Austin,S017,R087,,1,0,desktop,6.8,4,110.0,0.031,34,2,6.0,85,40,10,WH-B,21.0
+3,2026-03-03,West,Widget C,partner,2125.75,15,0.15,170.1,650.0,1475.75,29,F,4.9,Consumer,DE,Berlin,S203,R222,PROMO15,0,1,tablet,19.5,11,340.0,0.056,67,0,0.0,200,90,5,WH-C,16.7

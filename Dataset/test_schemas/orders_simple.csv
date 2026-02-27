@@ -1,0 +1,6 @@
+order_id,order_date,customer_id,region,product,units,unit_price,total_amount,status
+1001,2026-01-03,C001,North,Widget A,3,19.99,59.97,shipped
+1002,2026-01-04,C002,West,Widget B,1,49.50,49.50,pending
+1003,2026-01-05,C003,South,Widget C,5,12.00,60.00,shipped
+1004,2026-01-06,C004,East,Widget A,2,19.99,39.98,cancelled
+1005,2026-01-07,C002,West,Widget D,4,8.75,35.00,shipped

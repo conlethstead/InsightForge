@@ -1,0 +1,9 @@
+record_id,event_date,region,revenue,units,customer_age,customer_gender,notes
+1,2026-01-01,North,1200.50,10,34,F,normal row
+2,01/02/2026,South,,5,unknown,M,missing revenue and text age
+3,2026/01/03,West,N/A,three,29,,non-numeric units and null gender
+4,,East,-250.00,-2,45,F,negative revenue and units
+5,2026-13-01,North,980.10,8,31,M,invalid month in date
+6,2026-01-06,North,980.10,8,31,M,duplicate business values
+6,2026-01-06,North,980.10,8,31,M,duplicate primary id
+7,not_a_date,Central,0,0,,X,invalid date and unknown category

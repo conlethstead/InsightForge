@@ -1,0 +1,6 @@
+ticket_id,created_at,priority,category,region,agent_id,resolution_hours,satisfaction_score
+T-001,2026-01-10 09:15:00,high,billing,North,A12,3.5,4
+T-002,2026-01-10 10:05:00,low,how_to,West,A07,12.0,5
+T-003,2026-01-11 08:40:00,medium,bug,South,A03,7.2,3
+T-004,2026-01-11 13:22:00,high,outage,East,A09,1.1,2
+T-005,2026-01-12 16:45:00,medium,billing,West,A12,5.8,4
