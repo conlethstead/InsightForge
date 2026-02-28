@@ -78,6 +78,7 @@ VIZ_CODE_SYSTEM = f"""You generate Python code that loads a CSV and creates a si
 Rules:
 - Use ONLY these imports: {VIZ_CODE_ALLOWED_IMPORTS}. No other modules.
 - Load the CSV from the path given in the prompt into a DataFrame (e.g. df = pd.read_csv(csv_path)).
+- Before any arithmetic (division, multiplication, etc.) on columns, ensure they are numeric. CSV columns are often read as strings (e.g. Cost with currency, numbers with commas). Use pd.to_numeric(df['col'], errors='coerce') for columns used in calculations, then drop or handle rows with NaN if needed.
 - Create a Plotly figure and assign it to the variable named exactly: fig
 - Do not use subplots unless the user asks for multiple charts; one fig is enough.
 - Output only runnable Python code, no markdown or explanation."""
@@ -111,6 +112,7 @@ ANALYTICAL_CODE_SYSTEM = f"""You generate Python code that loads a CSV and compu
 Rules:
 - Use ONLY these imports: {ANALYTICAL_CODE_ALLOWED_IMPORTS}. No other modules (no plotly).
 - Load the CSV from the path given in the prompt into a DataFrame (e.g. df = pd.read_csv(csv_path)).
+- Before any arithmetic (division, multiplication, etc.) on columns, ensure they are numeric. CSV columns are often read as strings (e.g. Cost with currency, numbers with commas). Use pd.to_numeric(df['col'], errors='coerce') for columns used in calculations, then drop or handle rows with NaN if needed.
 - Compute the answer (totals, breakdowns, top-N, counts, etc.) and assign it to the variable named exactly: result
 - result must be one of: a pandas DataFrame, a dict, a list, or a single number/string.
 - Output only runnable Python code, no markdown or explanation."""
